@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background: url(/pink-yellow-plain.jpeg) no-repeat;
+    background-size: 100% 10000%;
+    background-position: center;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30%;
+    box-shadow: 0 5px 10px #fff;
+}
+
+header.logo {
+    font-size: 10px;
+    font-weight: 900px;
+    color: black;
+    transition: .5s;
+}
+
+header.logo:hover {
+    transform: scale(1.2);
+}
+
+header nav ul li {
+    position: relative;
+    float: left;
+}
+
+header nav ul li {
+    padding: 20px;
+    color: black;
+    font-size: 21px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background: #b43a66;
+    color: #fff
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+nav ul li:hover>ul {
+    display: initial;
+}

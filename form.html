@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/" method="POST">
+      <label>
+        ФИО:<br />
+        <input name="field-name-1" value="" /> </label
+      ><br />
+      <label for="phone">Телефон:</label><br />
+      <input type="tel" name="phone" required /><br /><br />
+      <label>
+        Текстовое поле email:<br />
+        <input
+          name="field-email"
+          type="email"
+          placeholder="Введите вашу почту"
+        /> </label
+      ><br />
+
+      <label>
+        Текстовое поле даты:<br />
+        <input name="field-date" value="гггг.мм.дд" type="date" /> </label
+      ><br />
+
+      <label>
+        Биография:<br />
+        <textarea name="field-name-2"></textarea></label
+      ><br />
+
+      <label>
+        <br />
+        <select name="favorite-programming-language-10[]" multiple="multiple">
+          <option value="pascal">Pascal</option>
+          <option value="c" selected="selected">C</option>
+          <option value="c++" selected="selected">C++</option>
+          <option value="javascript" selected="selected">Javascript</option>
+          <option value="php" selected="selected">PHP</option>
+          <option value="python" selected="selected">Python</option>
+          <option value="java" selected="selected">Java</option>
+          <option value="haskell" selected="selected">Haskell</option>
+          <option value="clojure" selected="selected">Clojure</option>
+          <option value="prolog" selected="selected">Prolog</option>
+          <option value="scala" selected="selected">Scala</option>
+        </select> </label
+      ><br />
+
+      Выберите пол:<br />
+      <label>
+        <input
+          type="radio"
+          checked="checked"
+          name="radio-group-1"
+          value="male"
+        />
+        Мужской
+      </label>
+      <label>
+        <input type="radio" name="radio-group-1" value="female" />
+        Женский </label
+      ><br />
+      <label><input type="checkbox" />С контрактом ознакомлен(-а)</label><br />
+      <input type="submit" value="Сохранить" />
+    </form>
+  </body>
+</html>
