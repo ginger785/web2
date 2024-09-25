@@ -1,72 +1,125 @@
-* {
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
+    font-family: URW Chancery L, 'Times New Roman', Times, serif;
+    background-color: #e38bbf;
     text-decoration: none;
 }
 
-body {
-    height: 100vh;
-    background: url(/pink-yellow-plain.jpeg) no-repeat;
-    background-size: 100% 10000%;
-    background-position: center;
+a {
+    color: #bc2c79;
 }
 
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
+.content {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*  ШАПКА */
+.header {
+    background-color: #bc2c79;
+    color: #e7e3e3;
+    padding: 20px 0;
+}
+
+.header-content {
+    max-width: 960px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30%;
-    box-shadow: 0 5px 10px #fff;
 }
 
-header.logo {
-    font-size: 10px;
-    font-weight: 900px;
-    color: black;
-    transition: .5s;
+/* ЛОГОТИП */
+.logo {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    background: url(logo-Photoroom.png);
+    background-size: auto 90px;
 }
 
-header.logo:hover {
-    transform: scale(1.2);
-}
-
-header nav ul li {
-    position: relative;
-    float: left;
-}
-
-header nav ul li {
-    padding: 20px;
-    color: black;
-    font-size: 21px;
-    display: block;
-}
-
-header nav ul li a:hover {
-    background: #b43a66;
-    color: #fff
-}
-
-nav ul li ul {
+.logo img {
+    height: 30px;
+    margin-left: 10px;
+    float: none;
+    margin: 0;
     position: absolute;
-    left: 0;
-    width: 180px;
-    background: #fff;
-    display: none;
 }
 
-nav ul li ul li {
+/* ГИТ */
+.site-title {
+    margin: 0;
+}
+
+.site-link a {
+    font-size: 20px;
+    color: #dad7d7;
+    text-decoration: none;
+}
+
+.site-link a:hover {
+    color: #c61f6a;
+}
+
+/* ССЫЛКА */
+.main-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-menu li {
+    margin-left: 20px;
+}
+
+.main-menu a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-menu a:hover {
+    color: rgb(172, 21, 21);
+}
+
+/* ТАБЛИЧКА */
+.data-table {
     width: 100%;
-    border: 1px solid rgba(0, 0, 0, .1);
+    border-collapse: collapse;
+    border: solid 3px #0c0808;
 }
 
-nav ul li:hover>ul {
-    display: initial;
+.data-table th,
+.data-table td {
+    padding: 10px;
+    text-align: left;
+    border: solid 1px #384357;
+}
+
+.data-table th {
+    background-color: #bc2c79;
+    color: #fff;
+    grid-column: auto;
+    border: solid 1px #dad7d7;
+    text-align: left;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #bc2c79;
+}
+
+/* подвал */
+.footer {
+    background-color: #c61f6a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
 }
